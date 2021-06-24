@@ -8,6 +8,8 @@ defmodule Wabanex.Repo.Migrations.CreateExercisesTable do
             add :protocol_description, :string
             add :repetitions, :string
             add :training_id, references(:trainings)
+
+            timestamps()
         end
     end
 end
